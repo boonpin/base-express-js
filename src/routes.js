@@ -1,5 +1,6 @@
-const {app} = require('./app');
 const controllers = require("./controllers");
 // -------
 
-app.get('/', controllers.main.index);
+exports.routes = (app) => {
+    app.get('/', controllers.main.index);
+}
